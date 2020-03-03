@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  width: 85%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+
+
+
+  /* Should be removed. Only for demonstration */
+}
+
+.right {
+  display: none;
+  /* width: 20%;
+  background-color: #999999;
+  margin-left: 2%; */
+
+}
+
+.left {
+  width: 100%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  /* content: "remove not needed"; */
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.active{
+  color: white;
+  background-color: #4CAF50;
+}
+
+nav li a {
+  display: block;
+  color: #0000ff;
+  text-decoration-style: solid;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #dddddd; */
+  background-image: linear-gradient(to left, blue, yellow);
+}
+
+
+
+nav li{
+  float: left;
+  list-style-type: none;
+  margin: 0.3em;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin-bottom: 2%;
+}
+
+td,th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+h2{
+  clear: left;
+}
+
+footer{
+  clear: left;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, yellow);
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+
+
+}
+
+.data_img{
+  float: left;
+  height: 300px;
+  width: 300px;
+  padding-right: 2%;
+}
+
+
+@media only screen and (min-width: 860px){
+
+  .right {
+    display: inline;
+    width: 20%;
+    background-color: #999999;
+    margin-left: 2%;
+
+  }
+
+  .left {
+    width: 75%;
+
+  }
+
+}

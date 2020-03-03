@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  width: 85%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+
+
+
+  /* Should be removed. Only for demonstration */
+}
+
+.right {
+  width: 100%;
+
+}
+
+.left {
+
+  display: none;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  /* content: "remove not needed"; */
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav li a {
+  display: block;
+  color: #0000ff;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #009900;
+}
+
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to left, blue, yellow);
+}
+
+nav li{
+  float: left;
+  list-style-type: none;
+  margin: 0.3em;
+
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  column-width: 14em;
+  column-gap: 2em;
+  column-rule: 1px solid #ccc;
+}
+
+footer{
+  clear: left;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, yellow);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.icon{
+  width: 30px;
+  height: 30px
+}
+
+.data_img{
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.place_column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.place_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.place_image{
+  width: 100%;
+}
+
+@media only screen and (min-width: 860px){
+
+  .left {
+    display: inline;
+    width: 20%;
+    background-color: #999999;
+    margin-right: 2%;
+
+  }
+
+  .right{
+    width: 75%;
+  }
